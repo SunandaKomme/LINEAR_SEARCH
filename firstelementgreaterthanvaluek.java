@@ -9,11 +9,16 @@ public class firstelementgreaterthanvaluek{
             arr[i]=sc.nextInt();
         }
         int k=sc.nextInt();
+        boolean found=false;
         for(int i=0;i<n;i++){
             if(arr[i]>k){
                 System.out.print("Element greater than k is "+arr[i]);
+                found=true;
                 break;
             }
+        }
+        if(!found){
+            System.out.print("No element is greater than k");
         }
 
     }}
